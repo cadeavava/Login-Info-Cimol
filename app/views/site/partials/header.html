@@ -1,0 +1,14 @@
+<div id="header">
+    <div>
+        <a href="/" class="btn btn-success btn-sm">Home</a>
+    </div>
+    <div>
+        {% if is_logged_in %}
+            Bem vindo, {{user.nome}}
+            <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+        {% else %}
+            Bem vindo, visitante
+            <a href="/login" class="btn btn-warning btn-sm">Login</a>
+        {% endif %}
+    </div>
+</div>

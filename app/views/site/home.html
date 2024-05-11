@@ -1,0 +1,11 @@
+{% extends "site/master.html" %}
+
+{% block content %}
+
+<h2>Home, olá</h2>
+
+{{messages['nome']['message']|message(messages['nome']['alert'])|raw}}
+
+{{user.nome}}
+
+{% endblock %}
